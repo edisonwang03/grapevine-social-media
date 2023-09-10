@@ -1,5 +1,5 @@
 import { ManageAccountsOutlined,} from "@mui/icons-material";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, Divider, useTheme } from "@mui/material";
 import UserImage from "../../components/UserImage";
 import FlexBetween from "../../components/FlexBetween";
 import WidgetWrapper from "../../components/WidgetWrapper";
@@ -36,10 +36,12 @@ const UserWidget = ({ userId, picturePath }) => {
     firstName,
     lastName,
     friends,
+    bio,
   } = user;
 
   return (
     <WidgetWrapper>
+    {/* FIRST ROW */}
       <FlexBetween
         gap="0.5rem"
         pb="1.1rem"
@@ -66,6 +68,14 @@ const UserWidget = ({ userId, picturePath }) => {
         </FlexBetween>
         <ManageAccountsOutlined />
       </FlexBetween>
+
+      <Divider />
+
+      {/* SECOND ROW */}
+      <Box p="1rem 0" display="flex" alignItems="center" gap="1rem" mb="0.5rem">
+        <Typography color={medium}>{bio}</Typography>
+      </Box>
+          
     </WidgetWrapper>
   );
 };
