@@ -182,20 +182,20 @@ const Form = () => {
                                         )}
                                     </Dropzone>
                                 </Box>
+                                <TextField
+                                    label="Bio"
+                                    multiline
+                                    rows={4}
+                                    onBlur={handleBlur}
+                                    onChange={handleChange}
+                                    value={values.bio}
+                                    name="bio"
+                                    error={Boolean(touched.bio) && Boolean(errors.bio)}
+                                    helperText={touched.bio && errors.bio}
+                                    sx={{ gridColumn: "span 4" }}
+                                />
                             </>
                         )}
-                        <TextField
-                            label="Bio"
-                            multiline
-                            rows={4}
-                            onBlur={handleBlur}
-                            onChange={handleChange}
-                            value={values.bio}
-                            name="bio"
-                            error={Boolean(touched.bio) && Boolean(errors.bio)}
-                            helperText={touched.bio && errors.bio}
-                            sx={{ gridColumn: "span 4" }}
-                        />
                         <TextField
                             label="Email"
                             onBlur={handleBlur}
