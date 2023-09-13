@@ -12,4 +12,5 @@ Grapevine is a social media and microblogging app similar to Twitter. Users can 
 - Mangaged authorization global states via Redux to ensure each account's home page is personalized
 - Modeled the login/registration forms with Formik and defined validation schemas with Yup
 
+
 ![image](https://github.com/edisonwang03/grapevine-social-media/assets/49788106/2a6331ce-cc43-47b6-a3b1-a5792041a2a9)
