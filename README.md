@@ -6,7 +6,7 @@ Grapevine is a social media and microblogging app similar to Twitter. Users can 
 
 ## Technologies/Modules Used
 
-- MERN stack: MongoDB stores users & posts and an Express app is serving a REST API to a Vite (React) frontend
+- MERN stack: MongoDB stores users & posts and an Express app is serving a REST API to a React frontend
 - Designed the UI into individual, reusable widgets by incorporating MUI components
 - Utilized JSON Web Tokens to authenticate and authorize user accounts when logging in
 - Mangaged authorization global states via Redux to ensure each account's home page is personalized
